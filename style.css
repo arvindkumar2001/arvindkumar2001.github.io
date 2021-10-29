@@ -1,0 +1,105 @@
+*{
+  margin:0px;
+}
+html,body{
+  height: 100%;
+  font-family: Sans-Serif;
+}
+ main{
+  background-image:linear-gradient(140deg,hsla(190,30%,20%,.98),hsla(190,40%,30%,.93)) , url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJRZOjlkchkIuurczGJfieA6KQPq3TnNJuyA&usqp=CAU)      ;
+  background-size: cover;
+  background-position: right;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  color:#eee;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+.form h1{
+  color:#eee;
+  text-align: center;
+}
+.form h1 span{
+  color:orange;
+}
+input{
+  box-sizing: border-box;
+  padding: 11px;
+  border:1px solid #eee;
+  border-radius: 8px;
+  margin: 10px 0px;
+  width:300px;
+}
+input:focus{
+  outline: none;
+  border: 2px solid dodgerblue;
+}
+.show{
+  transition: color .4s ease;
+  float: right;
+  padding: 3px;
+  background: inherit;
+  color: white;
+  border: none;
+}
+
+.btn{
+  padding: 5px 10px;
+  border: none;
+  background:inherit;
+  color: #eee;
+  transition: color .4s ease;
+}
+.btn:active,.show:active{
+  color:grey;
+}
+#login{
+  color:#eee;
+  font-weight: bold;
+  background:hsl(190,30%,30%);
+  border: none;
+  box-shadow: 0px 0px 5px hsl(190,30%,10%);
+  transition: background  .2s ease;
+}
+#login:focus{
+  border:none;
+}
+#login:active{
+  background:#eee;
+  color: black;
+  box-shadow: 0px 0px 5px grey inset;
+}
+a{
+  color: #eee;
+  text-decoration: none;
+  padding: 8px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.warning{
+  display: block;
+  color:tomato;
+  margin-bottom: 5px;
+}
+.error{
+  padding: 17px;
+  position: fixed;
+  background:tomato;
+  color: white;
+  width:100%;
+  font-weight: bolder;
+  transform: translateY(-55px);
+  transition: transform .2s ease-in;
+}
+
+@media screen and (max-width:700px){
+  input{
+    width:260px;
+  }
+}
