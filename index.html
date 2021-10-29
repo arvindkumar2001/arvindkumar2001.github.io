@@ -1,1 +1,33 @@
-hello world
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css" />
+    <title>login</title>
+  </head>
+  <body>
+    <div class="error">
+      wrong mobile or password
+    </div>
+    <main>
+      <section class="form">
+       <h1>Login<span>Form</span></h1><br>
+       <form id="form">
+         <label for="mobile" id="mobileLabel">Mobile</label><br>
+         <input type="number" name="mobile" id="mobile" placeholder="Mobile Number"  /><br>
+         <small class="mobile warning"></small>
+         
+         <label for="password" id="passwordLabel">Password</label><button type="button" class="show">show</button><br>
+         <input type="password" name="password" id="password" placeholder="Enter Password" /><br>     
+         <small class="password warning"></small>
+        
+         <input type="submit" name="login" id="login" value="login" />
+       </form>
+       <button type="button" class="btn">Forgotten Password ?</button>
+       <button type="button" class="btn">signup</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
